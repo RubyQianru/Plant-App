@@ -3,7 +3,6 @@ const app = express();
 const port = 3000;
 const plantsRouter = require("./routes/plants");
 
-
 app.use(express.json());
 app.use(
   express.urlencoded({
@@ -13,15 +12,6 @@ app.use(
 
 app.get("/", (req, res) => {
   res.json({ message: "ok" });
-});
-
-router.post('/', async function(req, res, next) {
-  try {
-    res.json(await programmingLanguages.create(req.body));
-  } catch (err) {
-    console.error(`Error while creating plant`, err.message);
-    next(err);
-  }
 });
 
 app.use("/plants", plantsRouter);
