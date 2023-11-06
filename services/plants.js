@@ -36,7 +36,7 @@ async function create(plant){
 
   async function update(id, plant){
     const result = await db.query(
-      `UPDATE programming_languages 
+      `UPDATE plant
       SET name="${plant.name}", humidity=${plant.humidity}, health=${plant.health}
       WHERE id=${id}` 
     );
