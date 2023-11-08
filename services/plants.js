@@ -5,7 +5,7 @@ const config = require('../config');
 async function getMultiple(page = 1){
   const offset = helper.getOffset(page, config.listPerPage);
   const rows = await db.query(
-    `SELECT id, name, humidity, health 
+    `SELECT id, name, humidity, temperature 
     FROM plant LIMIT ${offset},${config.listPerPage}`
   );
   const data = helper.emptyOrRows(rows);
@@ -20,9 +20,9 @@ async function getMultiple(page = 1){
 async function create(plant){
     const result = await db.query(
       `INSERT INTO plant 
-      (name, humidity, health) 
+      (name, humidity, temperature) 
       VALUES 
-      ('${plant.name}', ${plant.humidity}, ${plant.health})`
+      ('${plant.name}', ${plant.humidity}, ${plant.temperature})`
     );
   
     let message = 'Error in creating plant';
@@ -37,7 +37,7 @@ async function create(plant){
   async function update(id, plant){
     const result = await db.query(
       `UPDATE plant
-      SET name="${plant.name}", humidity=${plant.humidity}, health=${plant.health}
+      SET name="${plant.name}", humidity=${plant.humidity}, temperature=${plant.temperature}
       WHERE id=${id}` 
     );
   
