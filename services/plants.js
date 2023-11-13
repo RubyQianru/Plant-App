@@ -22,36 +22,16 @@ async function create(data){
       `INSERT INTO plant 
       (humidity, temperature) 
       VALUES 
-      ('${data.humidity}, ${data.temperature})`
+      (${data}, ${data})`
     );
-  
     let message = 'Error in creating plant';
-  
     if (result.affectedRows) {
       message = 'Plant created successfully';
     }
-  
-    return {message};
-  }
-
-  async function update(id, data){
-    const result = await db.query(
-      `UPDATE plant
-      SET humidity=${data.humidity}, temperature=${data.temperature}
-      WHERE id=${id}` 
-    );
-  
-    let message = 'Error in updating plant';
-  
-    if (result.affectedRows) {
-      message = 'Plant updated successfully';
-    }
-  
     return {message};
   }
 
 module.exports = {
   getMultiple,
-  create,
-  update
+  create
 }
