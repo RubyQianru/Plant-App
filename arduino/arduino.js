@@ -12,4 +12,10 @@ const port = new SerialPort({
   })
 
 const parser = port.pipe(new ReadlineParser({ delimiter: '\r\n' }))
-parser.on('data', console.log)
+const jsonParser = parser.json()
+console.log(jsonParser)
+// parser.on('data', console.log) //format into create function 
+
+module.exports = {
+  jsonParser
+}

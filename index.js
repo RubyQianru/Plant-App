@@ -1,3 +1,7 @@
+
+//call arduino file, connnect to arduino
+const { parser } = require('./arduino/arduino')
+
 const express = require("express");
 const app = express();
 const port = 3000;
@@ -14,6 +18,7 @@ app.get("/", (req, res) => {
   res.json({ message: "ok" });
 });
 
+app.use(parser)
 app.use("/plants", plantsRouter);
 /* Error handler middleware */
 app.use((err, req, res, next) => {
@@ -21,8 +26,7 @@ app.use((err, req, res, next) => {
   console.error(err.message, err.stack);
   res.status(statusCode).json({ message: err.message });
   return;
-});
-
+}); 
 
 
 app.listen(port, () => {
