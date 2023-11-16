@@ -1,11 +1,9 @@
 
-const plants = require('./services/plants');
-const bodyParser = require('body-parser')
-
 const express = require("express");
 const app = express();
 const port = 3000;
 const plantsRouter = require("./routes/plants");
+const { setupSerialPort } = require('./parsers/serialModule');
 
 app.use(express.json());
 app.use(
@@ -18,25 +16,7 @@ app.get("/", (req, res) => {
   res.json({ message: "ok" });
 });
 
-const { SerialPort } = require('serialport');
-const { ReadlineParser } = require('@serialport/parser-readline');
-
-const serialport = new SerialPort({
-    path: 'COM7', 
-    baudRate: 9600,
-});
-const parser = serialport.pipe(new ReadlineParser({ delimiter: '\r\n' }));
-
-parser.on('data', async (data) => {
-  console.log('Arduino data:', data);
-
-  try {
-    const result = await plants.create(data);
-    console.log('Posted data:', data);
-  } catch (error) {
-    console.error(error);
-  }
-});
+setupSerialPort()
 
 app.use("/plants", plantsRouter);
 
