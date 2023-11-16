@@ -1,6 +1,6 @@
 const db = require('./db');
 const helper = require('../helper');
-const config = require("../.gitignore/config.env");
+const config = require("../.gitignore/.gitignore");
 
 async function getMultiple(page = 1){
   const offset = helper.getOffset(page, config.listPerPage);
