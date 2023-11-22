@@ -4,6 +4,9 @@ const app = express();
 const port = 3000;
 const plantsRouter = require("./routes/plants");
 const { setupSerialPort } = require('./parsers/serialModule');
+const cors = require("cors");
+
+app.use(cors());
 
 app.use(express.json());
 app.use(
@@ -26,6 +29,12 @@ app.use((err, req, res, next) => {
   res.status(statusCode).json({ message: err.message });
   return;
 }); 
+
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'http://localhost:19006');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);

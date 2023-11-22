@@ -56,7 +56,7 @@ function MyTabs() {
         options={{
           tabBarLabel: 'Updates',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="bell" color={color} size={size} />
+            <MaterialCommunityIcons name="bell" color={color} size={size*0.9} />
           ),
         }}
       />

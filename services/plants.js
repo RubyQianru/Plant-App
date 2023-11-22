@@ -6,7 +6,7 @@ async function getMultiple(page = 1){
   const offset = helper.getOffset(page, config.listPerPage);
   const rows = await db.query(
     `SELECT id, humidity, temperature 
-    FROM plant LIMIT ${offset},${config.listPerPage}`
+    FROM plants LIMIT ${offset},${config.listPerPage}`
   );
   const data = helper.emptyOrRows(rows);
   const meta = {page};
@@ -19,7 +19,7 @@ async function getMultiple(page = 1){
 
 async function create(data){
     const result = await db.query(
-      `INSERT INTO plant 
+      `INSERT INTO plants 
       (humidity, temperature) 
       VALUES 
       (${data}, ${data})`

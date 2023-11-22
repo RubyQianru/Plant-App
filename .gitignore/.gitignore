@@ -1,10 +1,10 @@
 const config = {
   db: {
-    host: "db4free.net",
-    user: "rubyqianru",
-    password: "RZcp1207",
-    database: "plantdb",
-    connectTimeout: 60000
+    host: 'localhost',
+    user: 'root',
+    password: '7A7PX9VsNhhSeGDL',
+    database: 'plantdb',
+    port: 3306, // Default MySQL port
   },
   listPerPage: 10,
 };

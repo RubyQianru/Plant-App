@@ -1,19 +1,26 @@
 import * as React from 'react';
 import { Text, View } from 'react-native';
+import BlueWave from './Wave';
 
 import { useEffect, useState } from 'react';
+// import LineChart from './Chart';
 
 function Humidity(){
     const [data, setData] = useState(0)
+    const [dataset, setDataSet] = useState([])
     useEffect(()=>{
         async function fetchData(){
-            const address = "https://216.165.95.139:3000/plants"
+            const address = "http://localhost:3000/plants"
             try{
                 const response = await fetch(address)
                 const jsonData = await response.json()
                 console.log(jsonData)
-                // const humidity = jsonData.data[0].humidity
-                // setData(humidity)
+                const humidity = jsonData.data[jsonData.data.length-1].humidity
+                const humiditySet = jsonData.data.map((item)=>{
+                    return item.humidity
+                })
+                setDataSet(humiditySet)
+                setData(humidity)
             }catch(err){
                 console.error(err)
             }
@@ -24,13 +31,10 @@ function Humidity(){
 
     return(
         <>
-            <Text>
-                Humidity
-            </Text>
-            <Text>
-                {data}
-            </Text>
-        
+         <View>
+         {/* <LineChart humiditySet={dataset}/> */}
+         <BlueWave humidity={data} />
+         </View>
         </>
     )
 }
