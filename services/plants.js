@@ -6,7 +6,9 @@ async function getMultiple(page = 1){
   const offset = helper.getOffset(page, config.listPerPage);
   const rows = await db.query(
     `SELECT id, humidity, temperature 
-    FROM plants LIMIT ${offset},${config.listPerPage}`
+    FROM plants
+    ORDER BY id DESC
+    LIMIT ${offset},${config.listPerPage}`
   );
   const data = helper.emptyOrRows(rows);
   const meta = {page};

@@ -3,7 +3,7 @@ import { Text, View } from 'react-native';
 import BlueWave from './Wave';
 
 import { useEffect, useState } from 'react';
-// import LineChart from './Chart';
+import LineChart from './Chart';
 
 function Humidity(){
     const [data, setData] = useState(0)
@@ -32,7 +32,7 @@ function Humidity(){
     return(
         <>
          <View>
-         {/* <LineChart humiditySet={dataset}/> */}
+         <LineChart humiditySet={dataset}/>
          <BlueWave humidity={data} />
          </View>
         </>
