@@ -5,7 +5,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import Humidity from './src/Plant/Humidity';
-
 function Home() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>

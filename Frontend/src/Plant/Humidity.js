@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Text, View } from 'react-native';
 import BlueWave from './Wave';
-
+import { Col, Row } from 'react-native-responsive-grid';
 import { useEffect, useState } from 'react';
 import LineChart from './Chart';
 
@@ -31,9 +31,17 @@ function Humidity(){
 
     return(
         <>
-         <View>
-         <LineChart humiditySet={dataset}/>
-         <BlueWave humidity={data} />
+         <View style={{
+            flex: 1,
+            justifyContent: "center"
+
+         }}>
+            <LineChart humiditySet={dataset} style={{
+            }}/>
+    
+            <BlueWave humidity={data} style={{
+                margin: "10px"
+            }}/>
          </View>
         </>
     )
