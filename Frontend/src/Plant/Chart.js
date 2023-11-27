@@ -45,6 +45,9 @@ function LineChart(props){
               display: false, // hide x-axis grid lines
               drawBorder: false, // hide x-axis border
             },
+            ticks: {
+              display: false, // hide x-axis labels
+            },
           },
           y: {
             grid: {

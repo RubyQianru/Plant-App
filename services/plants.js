@@ -2,16 +2,21 @@ const db = require('./db');
 const helper = require('../helper');
 const config = require("../.gitignore/.gitignore");
 
-async function getMultiple(page = 1){
-  const offset = helper.getOffset(page, config.listPerPage);
+async function getMultiple(){
+  const totalRows = await db.query('SELECT COUNT(*) AS total FROM plants');
+  const totalRecords = totalRows[0].total;
+
+  const totalPages = Math.ceil(totalRecords / config.listPerPage);
+  const lastPage = totalPages-1;
+
+  const offset = helper.getOffset(lastPage, config.listPerPage);
   const rows = await db.query(
     `SELECT id, humidity, temperature 
     FROM plants
-    ORDER BY id DESC
     LIMIT ${offset},${config.listPerPage}`
   );
   const data = helper.emptyOrRows(rows);
-  const meta = {page};
+  const meta = {page: lastPage};
 
   return {
     data,

@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Text, View } from 'react-native';
 import BlueWave from './Wave';
-import { Col, Row } from 'react-native-responsive-grid';
 import { useEffect, useState } from 'react';
 import LineChart from './Chart';
 
@@ -14,11 +13,11 @@ function Humidity(){
             try{
                 const response = await fetch(address)
                 const jsonData = await response.json()
-                console.log(jsonData)
                 const humidity = jsonData.data[jsonData.data.length-1].humidity
                 const humiditySet = jsonData.data.map((item)=>{
                     return item.humidity
                 })
+                
                 setDataSet(humiditySet)
                 setData(humidity)
             }catch(err){
@@ -38,7 +37,7 @@ function Humidity(){
          }}>
             <LineChart humiditySet={dataset} style={{
             }}/>
-    
+            <br/>
             <BlueWave humidity={data} style={{
                 margin: "10px"
             }}/>
