@@ -3,6 +3,7 @@ import { Text, View } from 'react-native';
 import BlueWave from './Wave';
 import { useEffect, useState } from 'react';
 import LineChart from './Chart';
+import Strip from '../Calendar/CalendarStrip';
 
 function Humidity(){
     const [data, setData] = useState(0)
@@ -34,13 +35,22 @@ function Humidity(){
             flex: 1,
             justifyContent: "center"
 
-         }}>
-            <LineChart humiditySet={dataset} style={{
-            }}/>
+         }}> 
+            <View style={{
+                backgroundColor:"white",
+                padding: "20px",
+                borderRadius:"20px",
+                shadowColor: '#000',
+                shadowOffset: { width: -2, height: 0 },
+                shadowOpacity: 0.05,
+                shadowRadius: 10,
+            }}>
+                <BlueWave humidity={data} />
+
+            </View>
             <br/>
-            <BlueWave humidity={data} style={{
-                margin: "10px"
-            }}/>
+            <LineChart humiditySet={dataset} />
+
          </View>
         </>
     )
