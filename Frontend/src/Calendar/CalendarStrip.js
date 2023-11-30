@@ -14,10 +14,10 @@ const Strip = () => {
   // const [datesBlacklist] = useState([moment().add(1, 'days')]); // 1 day disabled
 
 
-
   return (
     <View>
       <CalendarStrip
+        flex={1}
         calendarAnimation={{ type: 'sequence', duration: 30 }}
         daySelectionAnimation={{
           // type: 'border',
@@ -26,7 +26,7 @@ const Strip = () => {
           // borderHighlightColor: 'black',
         }}
         // style={{ height: 100, paddingTop: 20, paddingBottom: 10 }}
-        calendarHeaderStyle={{ display: 'None' }}
+        // calendarHeaderStyle={{ display: 'None' }}
         calendarColor={'white'}
         dateNumberStyle={{ color: 'black' }}
         dateNameStyle={{ color: 'black' }}
@@ -38,12 +38,12 @@ const Strip = () => {
         // datesBlacklist={datesBlacklist}
         // iconLeft={require('./img/left-arrow.png')}
         // iconRight={require('./img/right-arrow.png')}
-        iconContainer={{ flex: 0.1 }}
+        // iconContainer={{ flex: 0.1 }}
       />
     </View>
   );
 };
 
-// AppRegistry.registerComponent('Strip', () => Strip);
+AppRegistry.registerComponent('Strip', () => Strip);
 
 export default Strip;

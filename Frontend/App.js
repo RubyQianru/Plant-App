@@ -4,17 +4,16 @@ import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import Humidity from './src/Plant/Humidity';
-import Strip from './src/Calendar/CalendarStrip';
+import HomePage from './src/Home';
+import Strip from './src/Calendar/CalendarStrip'
 
 function Home() {
   return (
     <>
-    <Strip/>
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>  
-      <Humidity/>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'stretch' }}>  
+      <Strip/>
+      <HomePage/>
     </View>
-
     </>
   );
 }

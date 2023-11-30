@@ -1,11 +1,13 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
-import BlueWave from './Wave';
-import { useEffect, useState } from 'react';
-import LineChart from './Chart';
-import Strip from '../Calendar/CalendarStrip';
+import { Text, View, ScrollView } from 'react-native';
 
-function Humidity(){
+import BlueWave from './Wave/Wave';
+import { useEffect, useState } from 'react';
+import LineChart from './Wave/Chart';
+import DataLine from './Chart/LineChart';
+import Strip from './Calendar/CalendarStrip';
+
+function HomePage(){
     const [data, setData] = useState(0)
     const [dataset, setDataSet] = useState([])
     useEffect(()=>{
@@ -30,30 +32,30 @@ function Humidity(){
     ,[])
 
     return(
-        <>
+        <ScrollView>
          <View style={{
             flex: 1,
             justifyContent: "center"
 
          }}> 
+
             <View style={{
                 backgroundColor:"white",
-                padding: "20px",
-                borderRadius:"20px",
+                padding: "20",
+                borderRadius:"20",
                 shadowColor: '#000',
                 shadowOffset: { width: -2, height: 0 },
                 shadowOpacity: 0.05,
                 shadowRadius: 10,
             }}>
                 <BlueWave humidity={data} />
-
             </View>
-            <br/>
-            <LineChart humiditySet={dataset} />
+                <LineChart humiditySet={dataset} />
+                <DataLine/>
 
          </View>
-        </>
+        </ScrollView>
     )
 }
 
-export default Humidity
+export default HomePage

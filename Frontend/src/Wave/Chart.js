@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Chart from 'chart.js/auto';
 import { Line } from "react-chartjs-2";
-import { Utils } from 'chart.js';
+import { Chart, registerables } from 'chart.js';
+Chart.register(...registerables);
 
 function LineChart(props){
     const chartData = {
