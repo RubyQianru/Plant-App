@@ -1,0 +1,133 @@
+{
+    "id": 1846,
+    "common_name": "spider plant",
+    "scientific_name": [
+        "Chlorophytum 'Bonnie'"
+    ],
+    "other_name": [],
+    "family": "Asparagaceae",
+    "origin": [
+        "South Africa"
+    ],
+    "type": "Shrub",
+    "dimension": "0.50 to 0.75 feet",
+    "dimensions": {
+        "type": null,
+        "min_value": 0.5,
+        "max_value": 0.75,
+        "unit": "feet"
+    },
+    "cycle": "Herbaceous Perennial",
+    "attracts": [],
+    "propagation": [
+        "Division",
+        "Stem Propagation",
+        "Air Layering Propagation",
+        "Offsets"
+    ],
+    "hardiness": {
+        "min": "9",
+        "max": "11"
+    },
+    "hardiness_location": {
+        "full_url": "https://perenual.com/api/hardiness-map?species_id=1846&size=og&key=sk-MoaA6568e7e0852113224",
+        "full_iframe": "<iframe frameborder=0 scrolling=yes seamless=seamless width=1000 height=550 style='margin:auto;' src='https://perenual.com/api/hardiness-map?species_id=1846&size=og&key=sk-MoaA6568e7e0852113224'></iframe>"
+    },
+    "watering": "Average",
+    "depth_water_requirement": [],
+    "volume_water_requirement": [],
+    "watering_period": null,
+    "watering_general_benchmark": {
+        "value": "7-10",
+        "unit": "days"
+    },
+    "plant_anatomy": [
+        {
+            "part": "leaves",
+            "color": [
+                "yellow-green"
+            ]
+        },
+        {
+            "part": "midribs",
+            "color": [
+                "creamy-white"
+            ]
+        }
+    ],
+    "sunlight": [
+        "part shade",
+        "filtered shade"
+    ],
+    "pruning_month": [
+        "May",
+        "June",
+        "July"
+    ],
+    "pruning_count": {
+        "amount": 1,
+        "interval": "yearly"
+    },
+    "seeds": 0,
+    "maintenance": "Low",
+    "care-guides": "http://perenual.com/api/species-care-guide-list?species_id=1846&key=sk-MoaA6568e7e0852113224",
+    "section": [
+        {
+            "id": 115,
+            "type": "watering",
+            "description": "Watering is best done when the topsoil is starting to feel dry to the touch. Spider Plant Chlorophytum 'Bonnie' should be watered when the soil begins to feel dry. This plant prefers to stay on the dry side, so be sure to not over-water it. Aim to water it once a week in the summer and once every two weeks during the winter."
+        },
+        {
+            "id": 116,
+            "type": "sunlight",
+            "description": "Spider plants (Chlorophytum 'Bonnie') prefer bright, indirect light, meaning that they should receive 4 to 6 hours of bright light from a south-facing window each day, preferably in the morning. If you're growing your spider plant indoors, you may also want to use artificial light to supplement the natural light available. Spider plants can tolerate low levels of light for short periods of time and even thrive partially in the shade, but excessive shade (less than 4 hours of sunlight) and direct sunlight can eventually cause yellowing of the leaves. Keep the spider plant out of direct, afternoon sunlight."
+        },
+        {
+            "id": 117,
+            "type": "pruning",
+            "description": "Before you start pruning, be sure to equip yourself with the appropriate tools for the job, such as a pair of garden shears or scissors. Remember to always sterilize your tools with isopropyl alcohol to avoid spreading any diseases.\n\nSpider Plant Chlorophytum 'Bonnie' should be pruned once a year in late spring or early summer. Pruning should be light, removing any yellowed or damaged leaves, as well as any long stems that are beginning to droop. It's also a good idea to trim back any long or straggly stems that are not producing any leaves or flowers. Pruning should be done before the plant starts to flower for the year, as this will give the plant enough time to form new growth before the next flowering season."
+        }
+    ],
+    "soil": [],
+    "growth_rate": "Low",
+    "drought_tolerant": false,
+    "salt_tolerant": false,
+    "thorny": false,
+    "invasive": false,
+    "tropical": false,
+    "indoor": true,
+    "care_level": "Easy",
+    "pest_susceptibility": [],
+    "pest_susceptibility_api": "Coming Soon",
+    "flowers": true,
+    "flowering_season": null,
+    "flower_color": "White",
+    "cones": false,
+    "fruits": false,
+    "edible_fruit": false,
+    "edible_fruit_taste_profile": "Coming Soon",
+    "fruit_nutritional_value": "Coming Soon",
+    "fruit_color": [],
+    "harvest_season": null,
+    "leaf": true,
+    "leaf_color": [
+        "green"
+    ],
+    "edible_leaf": false,
+    "cuisine": false,
+    "medicinal": false,
+    "poisonous_to_humans": 0,
+    "poisonous_to_pets": 0,
+    "description": "Spider Plant (Chlorophytum 'Bonnie') is an amazingly versatile and low-maintenance houseplant. It tolerate low to bright indirect light and almost any type of soil. Its unusual growth pattern resembles a spider or a rosette of strap-like foliage that fans out from a central stem. Its white, red-tipped flowers will appear in time. It is a perfect beginner's houseplant as its easy to grow and propagate, requires minimal care, and can survive in many different environments. It can even be grown outdoors in zones 11 and 12! All in all, Spider Plant is a delightful and long-lasting addition to any home garden.",
+    "default_image": {
+        "license": 45,
+        "license_name": "Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "original_url": "https://perenual.com/storage/species_image/1846_chlorophytum_bonnie/og/Chlorophytum_comosum_Variegatum_1zz.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/1846_chlorophytum_bonnie/regular/Chlorophytum_comosum_Variegatum_1zz.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/1846_chlorophytum_bonnie/medium/Chlorophytum_comosum_Variegatum_1zz.jpg",
+        "small_url": "https://perenual.com/storage/species_image/1846_chlorophytum_bonnie/small/Chlorophytum_comosum_Variegatum_1zz.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/1846_chlorophytum_bonnie/thumbnail/Chlorophytum_comosum_Variegatum_1zz.jpg"
+    },
+    "other_images": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry"
+}

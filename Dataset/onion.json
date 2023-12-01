@@ -1,0 +1,114 @@
+{
+    "id": 663,
+    "common_name": "onion",
+    "scientific_name": [
+        "Allium altaicum"
+    ],
+    "other_name": [],
+    "family": "Amaryllidaceae",
+    "origin": [
+        "Asia"
+    ],
+    "type": "Bulb",
+    "dimension": "1.00 to 2.00 feet",
+    "dimensions": {
+        "type": null,
+        "min_value": 1,
+        "max_value": 2,
+        "unit": "feet"
+    },
+    "cycle": "Perennial",
+    "attracts": [],
+    "propagation": [
+        "Seed Propagation"
+    ],
+    "hardiness": {
+        "min": "6",
+        "max": "9"
+    },
+    "hardiness_location": {
+        "full_url": "https://perenual.com/api/hardiness-map?species_id=663&size=og&key=sk-MoaA6568e7e0852113224",
+        "full_iframe": "<iframe frameborder=0 scrolling=yes seamless=seamless width=1000 height=550 style='margin:auto;' src='https://perenual.com/api/hardiness-map?species_id=663&size=og&key=sk-MoaA6568e7e0852113224'></iframe>"
+    },
+    "watering": "Average",
+    "depth_water_requirement": [],
+    "volume_water_requirement": [],
+    "watering_period": null,
+    "watering_general_benchmark": {
+        "value": "7-10",
+        "unit": "days"
+    },
+    "plant_anatomy": [],
+    "sunlight": [
+        "full sun"
+    ],
+    "pruning_month": [
+        "August"
+    ],
+    "pruning_count": {
+        "amount": 1,
+        "interval": "yearly"
+    },
+    "seeds": 0,
+    "maintenance": "Moderate",
+    "care-guides": "http://perenual.com/api/species-care-guide-list?species_id=663&key=sk-MoaA6568e7e0852113224",
+    "section": [
+        {
+            "id": 2122,
+            "type": "watering",
+            "description": "Onion (Allium altaicum) requires regular watering to flourish. Aim to water the plant deeply about once or twice a week. During hot, dry weather, water the onion more often to ensure that the soil does not become too dry. During the cooler months, decrease the frequency of watering - only provide as much as the onion needs. Soil should remain moist but not soggy. Make sure to check the soil every few days to ensure it has not dried out more quickly than expected."
+        },
+        {
+            "id": 2136,
+            "type": "sunlight",
+            "description": "Onion (Allium altaicum) plants prefer full sunlight, receiving 6-8 hours per day as part of their optimal growing conditions. During the spring and summer months, when the sun shines the longest and the sun is at its highest point in the sky, this is the ideal period for providing Onions with the most sunlight."
+        },
+        {
+            "id": 2142,
+            "type": "pruning",
+            "description": "Onion (Allium altaicum) should be pruned once a year in late summer or early fall. Pruning should be done carefully, as onion plants can be sensitive to pruning. Cut off the leaves that are yellowing or dead and thin out any crossed or overlapping branches. This will help encourage new growth and promote a healthier plant. Additionally, thinning-out overgrown plants will help keep the harvesting manageable. Although onion plants are hardy, they don't require heavy pruning. So, it's best to limit each pruning event to a few branches and leaves to avoid over-pruning and damaging the plant."
+        }
+    ],
+    "soil": [],
+    "growth_rate": "Low",
+    "drought_tolerant": true,
+    "salt_tolerant": true,
+    "thorny": false,
+    "invasive": false,
+    "tropical": false,
+    "indoor": false,
+    "care_level": "Medium",
+    "pest_susceptibility": [],
+    "pest_susceptibility_api": "Coming Soon",
+    "flowers": true,
+    "flowering_season": null,
+    "flower_color": "Yellowish-white",
+    "cones": false,
+    "fruits": false,
+    "edible_fruit": false,
+    "edible_fruit_taste_profile": "Coming Soon",
+    "fruit_nutritional_value": "Coming Soon",
+    "fruit_color": [],
+    "harvest_season": null,
+    "leaf": true,
+    "leaf_color": [
+        "green"
+    ],
+    "edible_leaf": true,
+    "cuisine": true,
+    "medicinal": true,
+    "poisonous_to_humans": 0,
+    "poisonous_to_pets": 0,
+    "description": "Onion (Allium altaicum) is an amazing plant species native to the mountain steppes of Central Asia. It has a rounded, juicy bulb that grows deep underground, plus thin, glossy green leaves that can reach up to three feet in height. Onion is highly nutritious, containing vitamins A, C, and K, as well as iron and other minerals. Its powerful pungent aroma and flavor make it a key ingredient in many dishes. It is also known to have anti-inflammatory and anti-bacterial properties and therefore can be used medically to treat wounds and other ailments. It is also beneficial for digestive health and immune system function. In short, onion is a powerful and nutritious plant species which is a must-have addition to any garden.",
+    "default_image": {
+        "license": 45,
+        "license_name": "Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "original_url": "https://perenual.com/storage/species_image/663_allium_altaicum/og/1365px-Allium_altaicum_kz01.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/663_allium_altaicum/regular/1365px-Allium_altaicum_kz01.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/663_allium_altaicum/medium/1365px-Allium_altaicum_kz01.jpg",
+        "small_url": "https://perenual.com/storage/species_image/663_allium_altaicum/small/1365px-Allium_altaicum_kz01.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/663_allium_altaicum/thumbnail/1365px-Allium_altaicum_kz01.jpg"
+    },
+    "other_images": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry"
+}
