@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { List } from 'react-native-paper';
 import { useState } from 'react';
-import LineChart from '../Wave/Chart';
+// import LineChart from '../Wave/Chart';
+import TestChart from '../Wave/WeekData';
 const Accordions = (props) => {
   const [expanded, setExpanded] = useState(true);
 
@@ -13,9 +14,9 @@ const Accordions = (props) => {
         title="Weekly Data Overview"
         // left={props => <List.Icon {...props} icon="folder" />}
         >
-        <List.Item title="" />
-        <LineChart humiditySet={props.humiditySet}/>
-        <List.Item title="Second item" />
+        {/* <LineChart humiditySet={props.humiditySet}/> */}
+        <TestChart humiditySet ={props.humiditySet}/>
+        
       </List.Accordion>
 
       {/* <List.Accordion

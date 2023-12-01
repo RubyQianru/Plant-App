@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const plantsRouter = require("./routes/plants");
+const guidesRouter = require("./routes/guides")
 const { setupSerialPort } = require('./parsers/serialModule');
 const cors = require("cors");
 
@@ -21,7 +22,8 @@ app.get("/", (req, res) => {
 
 setupSerialPort()
 
-app.use("/plants", plantsRouter);
+app.use("/plants", plantsRouter)
+app.use("/guides", guidesRouter)
 
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;

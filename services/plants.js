@@ -3,7 +3,7 @@ const helper = require('../helper');
 const config = require("../.gitignore/.gitignore");
 
 async function getMultiple(){
-  const totalRows = await db.query('SELECT COUNT(*) AS total FROM plants');
+  const totalRows = await db.query('SELECT COUNT(*) AS total FROM onion');
   const totalRecords = totalRows[0].total;
 
   const totalPages = Math.ceil(totalRecords / config.listPerPage);
@@ -11,8 +11,8 @@ async function getMultiple(){
 
   const offset = helper.getOffset(lastPage, config.listPerPage);
   const rows = await db.query(
-    `SELECT id, humidity, temperature 
-    FROM plants
+    `SELECT id, humidity, sunlight, temperature, time
+    FROM onion
     LIMIT ${offset},${config.listPerPage}`
   );
   const data = helper.emptyOrRows(rows);
@@ -26,14 +26,14 @@ async function getMultiple(){
 
 async function create(data){
     const result = await db.query(
-      `INSERT INTO plants 
-      (humidity, temperature) 
+      `INSERT INTO onion 
+      (humidity) 
       VALUES 
-      (${data}, ${data})`
+      (${data})`
     );
-    let message = 'Error in creating plant';
+    let message = 'Error in updating data';
     if (result.affectedRows) {
-      message = 'Plant created successfully';
+      message = 'Data updated successfully';
     }
     return {message};
   }

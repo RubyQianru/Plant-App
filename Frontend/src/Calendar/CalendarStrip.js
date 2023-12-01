@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, AppRegistry } from 'react-native';
+import { View, AppRegistry, Dimensions } from 'react-native';
 import moment from 'moment';
 import CalendarStrip from 'react-native-calendar-strip';
 
@@ -15,18 +15,16 @@ const Strip = () => {
 
 
   return (
-    <View>
+    <View >
       <CalendarStrip
         flex={1}
         calendarAnimation={{ type: 'sequence', duration: 30 }}
         daySelectionAnimation={{
-          // type: 'border',
           duration: 200,
           borderWidth: 1,
-          // borderHighlightColor: 'black',
         }}
-        // style={{ height: 100, paddingTop: 20, paddingBottom: 10 }}
-        calendarHeaderStyle={{ display: 'None' }}
+        style={{ height: 100, paddingTop: 20, paddingBottom: 10 }}
+        calendarHeaderStyle={{ transform: [{ scale: 0 }] }}
         calendarColor={'white'}
         dateNumberStyle={{ color: 'black' }}
         dateNameStyle={{ color: 'black' }}
@@ -34,6 +32,7 @@ const Strip = () => {
         highlightDateNameStyle={{ color: '#003d66' }}
         disabledDateNameStyle={{ color: 'grey' }}
         disabledDateNumberStyle={{ color: 'grey' }}
+        
         // datesWhitelist={datesWhitelist}
         // datesBlacklist={datesBlacklist}
         // iconLeft={require('./img/left-arrow.png')}

@@ -10,8 +10,11 @@ import Strip from './src/Calendar/CalendarStrip'
 function Home() {
   return (
     <>
+    
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'stretch' }}>  
-      <Strip/>
+
+      <Strip />
+      
       <HomePage/>
     </View>
     </>
@@ -80,9 +83,11 @@ function MyTabs() {
 
 export default function App() {
   return (
+    <>
     <NavigationContainer>
       <MyTabs />
     </NavigationContainer>
+    </>
   );
 }
 
