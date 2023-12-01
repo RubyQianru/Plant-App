@@ -1,0 +1,117 @@
+{
+    "id": 1322,
+    "common_name": "cabbage",
+    "scientific_name": [
+        "Brassica oleracea (Capitata Group)"
+    ],
+    "other_name": [],
+    "family": "Brassicaceae",
+    "origin": [
+        "Europe",
+        "Asia Minor",
+        "Mediterranean region"
+    ],
+    "type": "Vegetable",
+    "dimension": "1.00 to 1.50 feet",
+    "dimensions": {
+        "type": null,
+        "min_value": 1,
+        "max_value": 1.5,
+        "unit": "feet"
+    },
+    "cycle": "Annual",
+    "attracts": [],
+    "propagation": [
+        "Seed Propagation",
+        "Cutting",
+        "Layering Propagation",
+        "Division",
+        "Grafting Propagation"
+    ],
+    "hardiness": {
+        "min": "2",
+        "max": "11"
+    },
+    "hardiness_location": {
+        "full_url": "https://perenual.com/api/hardiness-map?species_id=1322&size=og&key=sk-MoaA6568e7e0852113224",
+        "full_iframe": "<iframe frameborder=0 scrolling=yes seamless=seamless width=1000 height=550 style='margin:auto;' src='https://perenual.com/api/hardiness-map?species_id=1322&size=og&key=sk-MoaA6568e7e0852113224'></iframe>"
+    },
+    "watering": "Average",
+    "depth_water_requirement": [],
+    "volume_water_requirement": [],
+    "watering_period": "morning",
+    "watering_general_benchmark": {
+        "value": null,
+        "unit": "days"
+    },
+    "plant_anatomy": [
+        {
+            "part": "leaves",
+            "color": [
+                "green"
+            ]
+        },
+        {
+            "part": "midribs",
+            "color": [
+                "mint-green"
+            ]
+        }
+    ],
+    "sunlight": [
+        "full sun"
+    ],
+    "pruning_month": null,
+    "pruning_count": [],
+    "seeds": 1,
+    "maintenance": "Low",
+    "care-guides": "http://perenual.com/api/species-care-guide-list?species_id=1322&key=sk-MoaA6568e7e0852113224",
+    "soil": [],
+    "growth_rate": "Low",
+    "drought_tolerant": false,
+    "salt_tolerant": false,
+    "thorny": false,
+    "invasive": false,
+    "tropical": false,
+    "indoor": false,
+    "care_level": "Medium",
+    "pest_susceptibility": [],
+    "pest_susceptibility_api": "Coming Soon",
+    "flowers": true,
+    "flowering_season": null,
+    "flower_color": "Rarely flowers",
+    "cones": false,
+    "fruits": true,
+    "edible_fruit": false,
+    "edible_fruit_taste_profile": "Coming Soon",
+    "fruit_nutritional_value": "Coming Soon",
+    "fruit_color": [
+        "green",
+        "purple",
+        "white"
+    ],
+    "harvest_season": null,
+    "leaf": true,
+    "leaf_color": [
+        "green",
+        "yellow",
+        "purple"
+    ],
+    "edible_leaf": false,
+    "cuisine": true,
+    "medicinal": true,
+    "poisonous_to_humans": 0,
+    "poisonous_to_pets": 0,
+    "description": "Cabbage (Brassica oleracea Capitata Group) is an amazing plant species. It has a wide range of nutritional values, making it an excellent source of Vitamin A and C and minerals like Potassium, Calcium and Magnesium. It is also rich in dietary fiber and antioxidants which boosts your immune system and helps prevent the growth of cancerous cells. Furthermore, it is low in calories and helps you regulate your weight. Plus, its sweet and slightly bitter taste makes it a great ingredient for a variety of dishes. All in all, cabbage is an unbelievably versatile and nutritious plant species that can enhance both your health and diet.",
+    "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/1322_brassica_oleracea_capitata_group/og/2671495796_c0bdc6bd99_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/1322_brassica_oleracea_capitata_group/regular/2671495796_c0bdc6bd99_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/1322_brassica_oleracea_capitata_group/medium/2671495796_c0bdc6bd99_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/1322_brassica_oleracea_capitata_group/small/2671495796_c0bdc6bd99_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/1322_brassica_oleracea_capitata_group/thumbnail/2671495796_c0bdc6bd99_b.jpg"
+    },
+    "other_images": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry"
+}

@@ -1,0 +1,186 @@
+{
+    "id": 2015,
+    "common_name": "taro",
+    "scientific_name": [
+        "Colocasia esculenta"
+    ],
+    "other_name": [
+        "coloyam",
+        "elephant's ear",
+        "elephant's ear"
+    ],
+    "family": "Araceae",
+    "origin": [
+        "Tropical eastern Asia"
+    ],
+    "type": "Bulb",
+    "dimension": "3.00 to 6.00 feet",
+    "dimensions": {
+        "type": null,
+        "min_value": 3,
+        "max_value": 6,
+        "unit": "feet"
+    },
+    "cycle": "Perennial",
+    "attracts": [],
+    "propagation": [
+        "Division"
+    ],
+    "hardiness": {
+        "min": "8",
+        "max": "10"
+    },
+    "hardiness_location": {
+        "full_url": "https://perenual.com/api/hardiness-map?species_id=2015&size=og&key=sk-MoaA6568e7e0852113224",
+        "full_iframe": "<iframe frameborder=0 scrolling=yes seamless=seamless width=1000 height=550 style='margin:auto;' src='https://perenual.com/api/hardiness-map?species_id=2015&size=og&key=sk-MoaA6568e7e0852113224'></iframe>"
+    },
+    "watering": "Frequent",
+    "depth_water_requirement": {
+        "unit": "inches",
+        "value": "6"
+    },
+    "volume_water_requirement": [],
+    "watering_period": null,
+    "watering_general_benchmark": {
+        "value": "2-3",
+        "unit": "days"
+    },
+    "plant_anatomy": [
+        {
+            "part": "leaf",
+            "color": [
+                "deep-green"
+            ]
+        },
+        {
+            "part": "veins",
+            "color": [
+                "lime-green",
+                "green-white"
+            ]
+        },
+        {
+            "part": "midrib",
+            "color": [
+                "lime-green"
+            ]
+        },
+        {
+            "part": "stem",
+            "color": [
+                "light-green"
+            ]
+        },
+        {
+            "part": "fruits",
+            "color": [
+                "brown-yellow"
+            ]
+        },
+        {
+            "part": "leaves",
+            "color": [
+                "lush-green"
+            ]
+        },
+        {
+            "part": "midribs",
+            "color": [
+                "green-white"
+            ]
+        },
+        {
+            "part": "stems",
+            "color": [
+                "green"
+            ]
+        }
+    ],
+    "sunlight": [
+        "full sun",
+        "part sun/part shade"
+    ],
+    "pruning_month": [
+        "August"
+    ],
+    "pruning_count": {
+        "amount": 1,
+        "interval": "yearly"
+    },
+    "seeds": 0,
+    "maintenance": "Moderate",
+    "care-guides": "http://perenual.com/api/species-care-guide-list?species_id=2015&key=sk-MoaA6568e7e0852113224",
+    "section": [
+        {
+            "id": 2144,
+            "type": "watering",
+            "description": "Taro (Colocasia esculenta) should be watered regularly, ideally every 3-4 days, to a depth of approximately 6 inches. The soil should be kept consistently moist and the upper inch of soil should feel moist to the touch, but not overly damp or soggy. During the hot months of summer, the taro may require slightly more frequent waterings. It's important to ensure that water can penetrate the soil deeply, so make sure that the soil is not overly compacted. Lastly, be sure to check the plant's foliage regularly for signs of dehydration, such as curling, wilting, or yellowing leaves."
+        },
+        {
+            "id": 2164,
+            "type": "sunlight",
+            "description": "Taro requires at least 6 hours of direct sunlight each day in order to thrive. Ideally, it should receive 8 to 12 hours of sunlight a day for optimal growth. It's important to ensure the taro receives the necessary sunlight during the peak hours within the day, which typically tend to be in the morning and early afternoon. Additionally, it may require some shade during the hottest part of the day. For best results, it is recommended that you ensure that your taro is in an area that receives plenty of sunlight and has some access to shade."
+        },
+        {
+            "id": 2165,
+            "type": "pruning",
+            "description": "Pruning of taro (Colocasia esculenta) should be done annually in late summer or early fall. Pruning should be done before the foliage yellows and dies off. An effective pruning regime involves removing old, dying or damaged leaves, stems, and roots, as well as any excess or vigorous growth that can reduce air movement and light penetration. Aim to remove up to 1-third of the older or damaged foliage and thin any overcrowded crowns. Also consider promoting new leaf and stem growth by removing the oldest part of the clump; divide and replant every 3 to 4 years."
+        }
+    ],
+    "soil": [
+        "Acidic",
+        " Bog",
+        " Humus rich"
+    ],
+    "growth_rate": "Low",
+    "drought_tolerant": true,
+    "salt_tolerant": true,
+    "thorny": false,
+    "invasive": true,
+    "tropical": true,
+    "indoor": false,
+    "care_level": "Medium",
+    "pest_susceptibility": [
+        "Mites",
+        " Root rot",
+        " Virus",
+        "  Pest resistant",
+        " Disease resistant "
+    ],
+    "pest_susceptibility_api": "Coming Soon",
+    "flowers": true,
+    "flowering_season": null,
+    "flower_color": "Yellowish-white",
+    "cones": false,
+    "fruits": true,
+    "edible_fruit": true,
+    "edible_fruit_taste_profile": "Coming Soon",
+    "fruit_nutritional_value": "Coming Soon",
+    "fruit_color": [
+        "green",
+        "yellow",
+        "purple",
+        "pink",
+        "white"
+    ],
+    "harvest_season": "Fall",
+    "leaf": true,
+    "leaf_color": [],
+    "edible_leaf": true,
+    "cuisine": true,
+    "medicinal": true,
+    "poisonous_to_humans": 0,
+    "poisonous_to_pets": 0,
+    "description": "Taro (Colocasia esculenta) is an amazing aquatic plant that is both beautiful and edible. It has long, bright green leaves that curl at the edges and a fleshy pink stem that originates from a large bulbous root. Its leaves and root are a great source of vitamins and minerals, making it a popular addition to many dishes. The root can be boiled, mashed, or turned into chips. Its leaves can be steamed or boiled. It also provides a great aesthetic for pond and aquarium owners, as its foliage is a stunning addition to any landscape. Taro's strong root system can help control erosion and create a natural water filter. Taro makes a great companion plant in vegetable beds, protecting fragile vegetables from pests and offering a unique foliage to the garden or aqua-scape.",
+    "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/2015_colocasia_esculenta/og/24325097844_14719030a3_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/2015_colocasia_esculenta/regular/24325097844_14719030a3_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/2015_colocasia_esculenta/medium/24325097844_14719030a3_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/2015_colocasia_esculenta/small/24325097844_14719030a3_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/2015_colocasia_esculenta/thumbnail/24325097844_14719030a3_b.jpg"
+    },
+    "other_images": "Upgrade Plan To Supreme For Access https://perenual.com/subscription-api-pricing. Im sorry"
+}
