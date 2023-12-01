@@ -26,7 +26,7 @@ const Strip = () => {
           // borderHighlightColor: 'black',
         }}
         // style={{ height: 100, paddingTop: 20, paddingBottom: 10 }}
-        // calendarHeaderStyle={{ display: 'None' }}
+        calendarHeaderStyle={{ display: 'None' }}
         calendarColor={'white'}
         dateNumberStyle={{ color: 'black' }}
         dateNameStyle={{ color: 'black' }}

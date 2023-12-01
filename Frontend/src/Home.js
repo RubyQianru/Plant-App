@@ -4,7 +4,7 @@ import { Text, View, ScrollView } from 'react-native';
 import BlueWave from './Wave/Wave';
 import { useEffect, useState } from 'react';
 import LineChart from './Wave/Chart';
-import DataLine from './Chart/LineChart';
+import Accordions from './Accordions/Accordions';
 import Strip from './Calendar/CalendarStrip';
 
 function HomePage(){
@@ -32,7 +32,10 @@ function HomePage(){
     ,[])
 
     return(
-        <ScrollView>
+        <ScrollView 
+            showsVerticalScrollIndicator={false}
+            showsHorizontalScrollIndicator={false}
+        >
          <View style={{
             flex: 1,
             justifyContent: "center"
@@ -41,17 +44,15 @@ function HomePage(){
 
             <View style={{
                 backgroundColor:"white",
-                padding: "20",
-                borderRadius:"20",
-                shadowColor: '#000',
-                shadowOffset: { width: -2, height: 0 },
-                shadowOpacity: 0.05,
-                shadowRadius: 10,
+                // borderRadius:"20",
+                // shadowColor: '#000',
+                // shadowOffset: { width: -2, height: 0 },
+                // shadowOpacity: 0.05,
+                // shadowRadius: 10,
             }}>
                 <BlueWave humidity={data} />
             </View>
-                <LineChart humiditySet={dataset} />
-                <DataLine/>
+                <Accordions humiditySet={dataset}/>
 
          </View>
         </ScrollView>
