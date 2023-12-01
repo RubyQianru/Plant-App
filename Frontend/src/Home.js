@@ -1,11 +1,12 @@
 import * as React from 'react';
-import { Text, View, ScrollView } from 'react-native';
-
+import { Text, View, ScrollView, Dimensions } from 'react-native';
+import { useTheme } from 'react-native-paper';
 import BlueWave from './Wave/Wave';
 import { useEffect, useState } from 'react';
 import LineChart from './Wave/Chart';
 import Accordions from './Accordions/Accordions';
 import Strip from './Calendar/CalendarStrip';
+import CalendarTable from './Calendar/Calendar';
 
 function HomePage(){
     const [data, setData] = useState(0)
@@ -31,6 +32,8 @@ function HomePage(){
     }
     ,[])
 
+    const theme = useTheme();
+
     return(
         <ScrollView 
             showsVerticalScrollIndicator={false}
@@ -38,21 +41,36 @@ function HomePage(){
         >
          <View style={{
             flex: 1,
-            justifyContent: "center"
-
+            justifyContent: "center",
+            width: Dimensions.get("window").width - 20,
          }}> 
 
             <View style={{
                 backgroundColor:"white",
-                // borderRadius:"20",
-                // shadowColor: '#000',
-                // shadowOffset: { width: -2, height: 0 },
-                // shadowOpacity: 0.05,
-                // shadowRadius: 10,
+                marginVertical: 10,
+                padding: 20,
+                borderRadius: 10
             }}>
                 <BlueWave humidity={data} />
             </View>
-                <Accordions humiditySet={dataset}/>
+
+            <View style={{
+                backgroundColor:"white",
+                marginVertical: 10,
+                padding: 20,
+                borderRadius: 10
+            }}>
+                <CalendarTable />
+
+            </View>
+            <View style={{
+                marginVertical: 10,
+                borderRadius: 10
+            }}>
+                <Accordions humiditySet={dataset} />
+
+
+            </View>
 
          </View>
         </ScrollView>

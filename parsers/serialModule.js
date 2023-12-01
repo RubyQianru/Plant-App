@@ -18,7 +18,7 @@ async function setupSerialPort() {
       console.log('Arduino data:', data);
 
       try {
-        const result = await plants.create(data);
+        const result = await plants.create("garlic", data);
         console.log('Posted data:', data);
       } catch (error) {
         console.error(error);

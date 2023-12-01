@@ -11,7 +11,7 @@ const BlueWave = (props) => {
   useEffect(() => {
     const calculateTranslateY = () => {
       setHumidity(props.humidity)
-      setHumidity(10)
+      setHumidity(37)
       const translateY = (150-humidity);
 
       if (humidity < 30){

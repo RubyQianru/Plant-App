@@ -3,30 +3,40 @@ import { List } from 'react-native-paper';
 import { useState } from 'react';
 // import LineChart from '../Wave/Chart';
 import TestChart from '../Wave/WeekData';
-const Accordions = (props) => {
-  const [expanded, setExpanded] = useState(true);
+import Guides from './Guides';
+import { useTheme } from 'react-native-paper';
 
+
+const Accordions = (props) => {
+  const theme = useTheme();
+  const [expanded, setExpanded] = useState(true);
   const handlePress = () => setExpanded(!expanded);
 
   return (
-    <List.Section>
+    <List.Section style={{
+      borderRadius: 10,
+      backgroundColor: 'white',
+      overflow: 'hidden'
+    }}>
+      <List.Accordion
+        style={{
+          backgroundColor: "white",
+        }}
+        title="Watering Guide"
+
+      >
+          <Guides/>
+      </List.Accordion>
       <List.Accordion
         title="Weekly Data Overview"
-        // left={props => <List.Icon {...props} icon="folder" />}
-        >
-        {/* <LineChart humiditySet={props.humiditySet}/> */}
+        style={{
+          backgroundColor: "white"
+        }}
+      >
         <TestChart humiditySet ={props.humiditySet}/>
-        
       </List.Accordion>
 
-      {/* <List.Accordion
-        title="Controlled Accordion"
-        left={props => <List.Icon {...props} icon="folder" />}
-        expanded={expanded}
-        onPress={handlePress}>
-        <List.Item title="First item" />
-        <List.Item title="Second item" />
-      </List.Accordion> */}
+      
     </List.Section>
   );
 };
