@@ -1,18 +1,40 @@
-import {
-    LineChart
-  } from "react-native-chart-kit";
+import {LineChart} from "react-native-chart-kit";
 import { View, Text, Dimensions } from "react-native";
+import { getDatesForWeek } from "../Helpers/Helpers.js"
+import {useState, useEffect} from 'react'
 
-function TestChart(props){
+function TestChart(){
+    const [data, setData] = useState([])
+
+    useEffect(()=>{
+        async function fetchData(){
+            const address = "http://localhost:3000/week"
+            try{
+                const response = await fetch(address)
+                const jsonData = await response.json()
+                const dataset = jsonData.data.map((item)=>{
+                    return item
+                })
+                setData(dataset.reverse())
+            }catch(err){
+                console.error(err)
+            }
+        }
+        fetchData()
+    }
+    ,[])
+
+    const labels = getDatesForWeek()
+
     return(
         <View>
         {/* <Text>Current Week</Text> */}
         <LineChart
             data={{
-            labels: ["January", "February", "March", "April", "May", "June"],
+            labels: labels,
             datasets: [
                 {
-                data: props.humiditySet
+                data: data,
                 }
             ]
             }}

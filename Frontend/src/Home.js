@@ -3,9 +3,7 @@ import { Text, View, ScrollView, Dimensions } from 'react-native';
 import { useTheme } from 'react-native-paper';
 import BlueWave from './Wave/Wave';
 import { useEffect, useState } from 'react';
-import LineChart from './Wave/Chart';
 import Accordions from './Accordions/Accordions';
-import Strip from './Calendar/CalendarStrip';
 import CalendarTable from './Calendar/Calendar';
 
 function HomePage(){
@@ -17,12 +15,14 @@ function HomePage(){
             try{
                 const response = await fetch(address)
                 const jsonData = await response.json()
-                const humidity = jsonData.data[jsonData.data.length-1].humidity
-                const humiditySet = jsonData.data.map((item)=>{
-                    return item.humidity
-                })
+                const humidity = jsonData.data[0].humidity
+                // const humiditySet = jsonData.data.map((item)=>{
+                //     const time = item.time
+                //     const humidity = item.humidity
+                //     return { humidity, time }
+                // })
                 
-                setDataSet(humiditySet)
+                // setDataSet(humiditySet.reverse())
                 setData(humidity)
             }catch(err){
                 console.error(err)
@@ -67,7 +67,7 @@ function HomePage(){
                 marginVertical: 10,
                 borderRadius: 10
             }}>
-                <Accordions humiditySet={dataset} />
+                <Accordions />
 
 
             </View>

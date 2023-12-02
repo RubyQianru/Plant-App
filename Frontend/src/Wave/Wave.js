@@ -1,42 +1,69 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, Animated } from 'react-native';
-import Wave from "react-native-waves"
+import React, { useEffect, useState, useRef } from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+import Wave from 'react-native-waves';
 
 const BlueWave = (props) => {
-  const [waveStyle, setWaveStyle] = useState(0);
-  const [bgcolor, setBgcolor] = useState('#a5e5ff')
-  // const [textColor, setTextColor] = useState('white')
-  const [humidity, setHumidity] = useState(0)
+  const [bgcolor, setBgcolor] = useState('#a5e5ff');
+  const [humidity, setHumidity] = useState(0);
+
+  // Refs for waveStyle and the react-native-waves component
+  const waveStyleRef = useRef(0);
+  const wavesRef = useRef(null);
+  console.log(props)
 
   useEffect(() => {
     const calculateTranslateY = () => {
-      setHumidity(props.humidity)
-      setHumidity(37)
-      const translateY = (150-humidity);
+      setHumidity(props.humidity);
 
-      if (humidity < 30){
-        setBgcolor('brown')
-      }else if(humidity < 50){
-        setBgcolor('#DEB887')
-      }else{
-        setBgcolor('#a5e5ff')
+      const translateY = 150 - humidity;
+
+      if (humidity < 30) {
+        setBgcolor('brown');
+      } else if (humidity < 50) {
+        setBgcolor('#DEB887');
+      } else {
+        setBgcolor('#a5e5ff');
       }
-      setWaveStyle(translateY);
+
+      // Update the ref value for waveStyle
+      waveStyleRef.current = translateY;
+
+      // Trigger animation manually if wavesRef is available
+      if (wavesRef.current) {
+        wavesRef.current.animate();
+      }
     };
+
     calculateTranslateY();
-  }, [props.humidity])
+  }, [props, humidity]);
 
   return (
-    <>
-      <View style={styles.body}>
-        <View style={styles.box}>
-          <Text style={styles.title}>{humidity}</Text>
-          <Wave speed={5} maxPoints={16} delta={10} height={100} color={bgcolor}></Wave>
-          <Wave speed={15} maxPoints={13} delta={12} gap={waveStyle+ 30}  ></Wave>
-          <Wave speed={15} maxPoints={10} delta={10} gap={waveStyle+ 35} color="#003d66" ></Wave>
-        </View>
+    <View style={styles.body}>
+      <View style={[styles.box, { backgroundColor: bgcolor }]}>
+        <Text style={styles.title}>{humidity}</Text>
+        <Wave
+          ref={(ref) => (wavesRef.current = ref)}
+          speed={15}
+          maxPoints={13}
+          delta={12}
+          gap={waveStyleRef.current + 30}
+          color={bgcolor} 
+        ></Wave>
+        <Wave
+          speed={15}
+          maxPoints={10}
+          delta={10}
+          gap={waveStyleRef.current +10 }
+        ></Wave>
+        <Wave
+          speed={15}
+          maxPoints={12}
+          delta={15}
+          gap={waveStyleRef.current + 15}
+          color="#003d66"
+        ></Wave>
       </View>
-    </>
+    </View>
   );
 };
 
@@ -51,11 +78,9 @@ const styles = StyleSheet.create({
     height: 120,
     borderRadius: 100,
     position: 'relative',
-    overflow: "hidden",
-    backgroundColor: '#0af',
+    overflow: 'hidden',
     display: 'flex',
     justifyContent: 'center',
-
   },
   title: {
     left: 0,
@@ -71,7 +96,7 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: 0, height: 1 },
     textShadowRadius: 0,
     textIndent: 0.3,
-  }
+  },
 });
 
 export default BlueWave;

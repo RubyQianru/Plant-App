@@ -22,6 +22,11 @@ const Accordions = (props) => {
         style={{
           backgroundColor: "white",
         }}
+        theme={{
+          colors: {
+            primary: '#1976d2'
+          },
+        }}
         title="Watering Guide"
 
       >
@@ -32,8 +37,13 @@ const Accordions = (props) => {
         style={{
           backgroundColor: "white"
         }}
+        theme={{
+          colors: {
+            primary: '#1976d2'
+          },
+        }}
       >
-        <TestChart humiditySet ={props.humiditySet}/>
+        <TestChart />
       </List.Accordion>
 
       
