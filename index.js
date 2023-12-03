@@ -5,6 +5,7 @@ const port = 3000;
 const plantsRouter = require("./routes/plants");
 const guidesRouter = require("./routes/guides")
 const weekRouter = require("./routes/week")
+const scheduleRouter = require("./routes/schedule")
 const { setupSerialPort } = require('./parsers/serialModule');
 const cors = require("cors");
 
@@ -26,6 +27,7 @@ setupSerialPort()
 app.use("/plants", plantsRouter)
 app.use("/guides", guidesRouter)
 app.use("/week", weekRouter)
+app.use("/schedule", scheduleRouter)
 
 
 app.use((err, req, res, next) => {

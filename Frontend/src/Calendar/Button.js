@@ -24,9 +24,11 @@ function CalendarButtons(){
                     text: '#1976d2',
                     borderRadius: 10,
                 }}
-                labelStyle={{
-                    color: '#1976d2',
-                }}
+                theme={{
+                    colors: {
+                      primary: '#1976d2'
+                    },
+                  }}
                 >
                 Delete Watering Plan
             </Button>

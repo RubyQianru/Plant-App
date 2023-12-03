@@ -38,11 +38,11 @@ function TestChart(){
                 }
             ]
             }}
-            width={Dimensions.get("window").width - 20} // from react-native
+            width={Dimensions.get("window").width - 20} 
             height={180}
             // yAxisLabel="%"
             yAxisSuffix="%"
-            yAxisInterval={1} // optional, defaults to 1
+            yAxisInterval={1} 
             chartConfig={{
             backgroundColor: "white",
             backgroundGradientFrom: "white",
