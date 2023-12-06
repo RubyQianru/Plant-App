@@ -8,7 +8,7 @@ import CalendarTable from './Calendar/Calendar';
 
 function HomePage(){
     const [data, setData] = useState(0)
-    const [dataset, setDataSet] = useState([])
+    // const [dataset, setDataSet] = useState([])
     useEffect(()=>{
         async function fetchData(){
             const address = "http://localhost:3000/plants"
@@ -51,6 +51,7 @@ function HomePage(){
                 padding: 20,
                 borderRadius: 10
             }}>
+                {/* <Text>Water Level Percentage</Text> */}
                 <BlueWave humidity={data} />
             </View>
 

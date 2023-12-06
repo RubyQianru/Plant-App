@@ -51,6 +51,9 @@ const CalendarTable = () => {
           selectedDayTextColor: '#ffffff',
           todayTextColor: '#1976d2',
           dayTextColor: '#2d4150',
+          textMonthFontFamily: 'arial',
+          textDayFontFamily: 'arial',
+          textMonthFontFamily: 'arial'
         }}
 
           />
