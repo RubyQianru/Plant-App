@@ -1,2 +1,1 @@
-# plantAPI
-Plant database 
+# Plant App
