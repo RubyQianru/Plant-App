@@ -4,15 +4,6 @@ import moment from 'moment';
 import CalendarStrip from 'react-native-calendar-strip';
 
 const Strip = () => {
-  // const [datesWhitelist] = useState([
-  //   {
-  //     start: moment(),
-  //     end: moment().add(3, 'days'), // total 4 days enabled
-  //   },
-  // ]);
-
-  // const [datesBlacklist] = useState([moment().add(1, 'days')]); // 1 day disabled
-
 
   return (
     <View >
@@ -33,11 +24,6 @@ const Strip = () => {
         disabledDateNameStyle={{ color: 'grey' }}
         disabledDateNumberStyle={{ color: 'grey' }}
         
-        // datesWhitelist={datesWhitelist}
-        // datesBlacklist={datesBlacklist}
-        // iconLeft={require('./img/left-arrow.png')}
-        // iconRight={require('./img/right-arrow.png')}
-        // iconContainer={{ flex: 0.1 }}
       />
     </View>
   );

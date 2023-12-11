@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { View, Text } from 'react-native';
 import WateringGuide from "./WateringGuide";
 
-function Guides (props){
-    const [waterGuide, setWaterGuide] = useState({})
+function Guides ({plant}){
+    const [waterGuide, setWaterGuide] = useState("")
     const [sunlightGuide, setSunlightGuide] = useState({})
     useEffect(()=>{
         async function getWatering(){
@@ -11,11 +11,8 @@ function Guides (props){
             try{
                 const response = await fetch(address)
                 const jsonData = await response.json()
-                const watering = jsonData.data.map((item)=>{
-                    return item.watering_description
-                })
-                console.log(watering)
-                setWaterGuide(watering)
+                const watering = jsonData.data
+                setWaterGuide(watering);
                 const sunlight = jsonData.data.map((item)=>{
                     return item.sunlight_description
                 })
@@ -26,12 +23,12 @@ function Guides (props){
         }
         getWatering()
 
-    },[])
+    },[plant])
 
     return(
         <>
             <View>
-                <WateringGuide data={waterGuide}/>
+                <WateringGuide data={waterGuide} plant={plant}/>
             </View>
         </>
     )

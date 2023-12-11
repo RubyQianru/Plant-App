@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 const plants = require('../services/plants');
 
-const table = "garlic"
+router.get('/:table', async function (req, res, next) {
+  const table = req.params.table;
 
-router.get('/', async function (req, res, next) {
   try {
     res.json(await plants.getMultipleDates(table));
   } catch (err) {

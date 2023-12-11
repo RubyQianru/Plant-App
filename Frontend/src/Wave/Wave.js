@@ -5,30 +5,30 @@ import Wave from 'react-native-waves';
 const BlueWave = (props) => {
   const [bgcolor, setBgcolor] = useState('#a5e5ff');
   const [humidity, setHumidity] = useState(0);
+  const [description, setDescription] = useState("")
 
   // Refs for waveStyle and the react-native-waves component
   const waveStyleRef = useRef(0);
   const wavesRef = useRef(null);
-  console.log(props)
 
   useEffect(() => {
     const calculateTranslateY = () => {
       setHumidity(props.humidity);
 
       const translateY = 150 - humidity;
-
       if (humidity < 30) {
         setBgcolor('brown');
+        setDescription("Okay")
       } else if (humidity < 50) {
         setBgcolor('#DEB887');
+        setDescription("Your plant needs more water!")
       } else {
         setBgcolor('#a5e5ff');
+        setDescription("Your plant is doing great!")
       }
 
-      // Update the ref value for waveStyle
       waveStyleRef.current = translateY;
 
-      // Trigger animation manually if wavesRef is available
       if (wavesRef.current) {
         wavesRef.current.animate();
       }
@@ -63,6 +63,9 @@ const BlueWave = (props) => {
           color="#003d66"
         ></Wave>
       </View>
+        <Text>      
+          {description}
+      </Text>
     </View>
   );
 };

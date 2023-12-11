@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@react-navigation/native-stack": "^6.9.17",
     "@shopify/react-native-skia": "^0.1.222",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",

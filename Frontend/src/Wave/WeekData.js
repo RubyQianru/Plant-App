@@ -3,12 +3,12 @@ import { View, Text, Dimensions } from "react-native";
 import { getDatesForWeek } from "../Helpers/Helpers.js"
 import {useState, useEffect} from 'react'
 
-function TestChart(){
+function TestChart({plant}){
     const [data, setData] = useState([])
 
     useEffect(()=>{
         async function fetchData(){
-            const address = "http://localhost:3000/week"
+            const address = `http://localhost:3000/week/${plant}`
             try{
                 const response = await fetch(address)
                 const jsonData = await response.json()

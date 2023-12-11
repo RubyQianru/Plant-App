@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 const plants = require('../services/plants');
 
-const table = "garlic"
+router.get('/:table', async function (req, res, next) {
+  const table = req.params.table;
 
-router.get('/', async function (req, res, next) {
   try {
     res.json(await plants.getMultiple(table));
   } catch (err) {
@@ -13,9 +13,11 @@ router.get('/', async function (req, res, next) {
   }
 });
 
-router.post('/', async function(req,res,next){
+router.post('/:table', async function(req,res,next){
+  const table = req.params.table;
+
   try{
-    res.json(await plants.create(req.body))
+    res.json(await plants.create(table, req.body))
   }catch(err){
     console.error("Can't create")
     next(err)

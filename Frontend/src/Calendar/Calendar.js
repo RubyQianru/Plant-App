@@ -28,7 +28,7 @@ const CalendarTable = () => {
 
   const markedDates = {};
   dates.forEach((date) => {
-    markedDates[date] = { marked: true };
+    markedDates[date] = { marked: true, dotColor: '#2E7D32' };
   });
 
   return (
@@ -47,9 +47,9 @@ const CalendarTable = () => {
           backgroundColor: '#ffffff',
           calendarBackground: '#ffffff',
           textSectionTitleColor: '#b6c1cd',
-          selectedDayBackgroundColor: '#1976d2',
+          selectedDayBackgroundColor: '#2E7D32',
           selectedDayTextColor: '#ffffff',
-          todayTextColor: '#1976d2',
+          todayTextColor: '#2E7D32',
           dayTextColor: '#2d4150',
           textMonthFontFamily: 'arial',
           textDayFontFamily: 'arial',

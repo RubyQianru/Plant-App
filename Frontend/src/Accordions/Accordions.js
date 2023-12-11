@@ -7,7 +7,7 @@ import Guides from './Guides';
 import { useTheme } from 'react-native-paper';
 
 
-const Accordions = (props) => {
+const Accordions = ({plant}) => {
   const theme = useTheme();
   const [expanded, setExpanded] = useState(true);
   const handlePress = () => setExpanded(!expanded);
@@ -24,13 +24,13 @@ const Accordions = (props) => {
         }}
         theme={{
           colors: {
-            primary: '#1976d2'
+            primary: '#2E7D32'
           },
         }}
         title="Watering Guide"
 
       >
-          <Guides/>
+          <Guides plant={plant}/>
       </List.Accordion>
       <List.Accordion
         title="Weekly Data Overview"
@@ -39,11 +39,11 @@ const Accordions = (props) => {
         }}
         theme={{
           colors: {
-            primary: '#1976d2'
+            primary: '#2E7D32'
           },
         }}
       >
-        <TestChart />
+        <TestChart plant={plant}/>
       </List.Accordion>
 
       

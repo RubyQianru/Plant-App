@@ -10,7 +10,7 @@ function CalendarButtons(){
                 onPress={() => console.log('Pressed')}
                 style={{
                     marginTop: 10,
-                    backgroundColor: '#1976d2',
+                    backgroundColor: '#2E7D32',
                     borderRadius: 10
                 }}>
                 Add Watering Plan
@@ -21,12 +21,12 @@ function CalendarButtons(){
                 onPress={() => console.log('Pressed')}
                 style={{
                     marginTop: 10,
-                    text: '#1976d2',
+                    text: '#2E7D32',
                     borderRadius: 10,
                 }}
                 theme={{
                     colors: {
-                      primary: '#1976d2'
+                      primary: '#2E7D32'
                     },
                   }}
                 >
