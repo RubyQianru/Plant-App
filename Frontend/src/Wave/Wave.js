@@ -18,10 +18,10 @@ const BlueWave = (props) => {
       const translateY = 150 - humidity;
       if (humidity < 30) {
         setBgcolor('brown');
-        setDescription("Okay")
+        setDescription("You plant needs water!")
       } else if (humidity < 50) {
         setBgcolor('#DEB887');
-        setDescription("Your plant needs more water!")
+        setDescription("Your plant needs to be watered soon.")
       } else {
         setBgcolor('#a5e5ff');
         setDescription("Your plant is doing great!")
@@ -63,7 +63,9 @@ const BlueWave = (props) => {
           color="#003d66"
         ></Wave>
       </View>
-        <Text>      
+        <Text style={{
+          margin: 10
+        }}>      
           {description}
       </Text>
     </View>
