@@ -33,7 +33,7 @@ const Accordions = ({plant}) => {
           <Guides plant={plant}/>
       </List.Accordion>
       <List.Accordion
-        title="Weekly Data Overview"
+        title="Weekly Water Level Overview"
         style={{
           backgroundColor: "white"
         }}

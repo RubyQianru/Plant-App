@@ -15,7 +15,7 @@ const BlueWave = (props) => {
     const calculateTranslateY = () => {
       setHumidity(props.humidity);
 
-      const translateY = 150 - humidity;
+      const translateY = 160 - humidity;
       if (humidity < 30) {
         setBgcolor('brown');
         setDescription("You plant needs water!")
