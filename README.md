@@ -1,5 +1,5 @@
 # Plant App
-## Overview
+- Plant App is a fullstack software and hardware mobile application project based on Express.js, React Native, MySQL, and Arduino.
 ## Preview
 ### Dashboards
 
